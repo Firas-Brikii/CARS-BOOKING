@@ -1,0 +1,522 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    scroll-behavior: smooth; 
+    overflow-x: hidden;
+}
+
+:root{
+    --clair:#fff;
+    --dark:#000;
+    --gray:#555;
+    --rose:#fc036b;
+    --graylight:#777;
+    --l200:35vmin;
+    --l60:10.5vmin;
+    --l50:8.7vmin;
+    --l45:8vmin;
+    --l40:7vmin;
+    --l35:6vmin;
+    --l30:5.25vmin;
+    --l20:3.5vmin;
+    --l18:3.15vmin;
+    --l15:2.7vmin;
+    --l10:1.75vmin;
+}
+
+.background-img{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.logo{
+    font-size: var(--l35);
+    margin-left: 50px;
+    color: #fff;
+}
+
+.btn{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:20px ;
+}
+
+.navbar h1:hover{
+    cursor: pointer;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--l50);
+    position: absolute;
+    width: 100vw;
+    font-weight: bold;
+    color: #fff;
+}
+
+.nav-links{
+    display: flex;
+    align-items: center;
+}
+
+.login{
+    color: yellow;
+}
+
+.menu-btn{
+    position: absolute;
+    top: var(--l50);
+    right: var(--l50);
+    width: var(--l50);
+    height: var(--l50);
+    display: none;
+    cursor: pointer;
+}
+
+.navbar li{
+    font-size: 20px;
+    transition: 0.2s;
+    color: white;
+    margin-left: 20px;
+}
+
+.navbar li:first-child{
+    margin-left: 0;
+}
+
+.navbar a:hover{
+    color: lightseagreen;
+    cursor: pointer;
+}
+
+.registration{
+    margin-bottom: 10px;
+    width: 500px;
+    text-align: right;
+}
+.registration a{
+    margin-left: 5px ;
+    font-size: 20px;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height:100vh;
+    width: 100wh;
+    background-position: center;
+    background-size: cover;
+    font-family: Montserrat;
+    background-image: linear-gradient(rgba(61, 66, 66, 0.8),rgb(1, 5, 5)), url(../img/interne3.jpg);
+}
+header h1{
+    font-size: 60PX;
+    color: white;
+}
+.desc{
+    display: flex;
+    width: 800px;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+header p{
+    font-size: 30px;
+    color: white;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+header a{
+    font-size: 30px;
+    text-transform: capitalize;
+    font-weight: bold;
+    transition: all 1s ease;
+}
+
+.back-home{
+    height: 70px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.back-home a{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    color: white;
+    border: 1px solid lightseagreen;
+    transition: all 1s ease;
+    border-radius: 10px;
+    height: 50px;
+    width: 150px;
+    font-size: 20px;
+}
+
+.back-home a:hover{
+    background-color: lightseagreen;
+    transform: scale(1.07);
+}
+
+header a:hover{
+    color: lightseagreen;
+    transform: scale(1.02);
+}
+
+.presentation{
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+}
+.ABOUT {
+    margin-left: 40px;
+    padding: 20px;
+    width: 700px;
+}
+.ABOUT h1{
+    font-weight: 900;
+    font-size: 45px;
+}
+.ABOUT p{
+    text-align: justify;
+    font-size: 20px;
+}
+.presentation img{
+    width: 500px;
+    height: 300px;
+}
+.row{
+    text-align: center;
+    background: linear-gradient(rgb(1,1,5),rgba(20,20,20,0.8));
+    color: white;
+}
+.row h1{
+    font-size: 70px;
+    color: white;
+}
+.CARS{
+    margin-bottom: 20px;
+}
+.col{
+    padding: 10px;
+    height: 320px;
+    width: 80%;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 10px auto;
+    margin-bottom: 30px;
+    display: flex;
+}
+
+
+.left h3{
+    font-family: Arial;
+    font-style: italic;
+    margin-left: 10px;
+    font-size: 20px;
+    text-align: center;
+}
+.left{
+    position: relative;
+}
+
+.log span{
+    margin: 5px 0;
+    padding: 10px;
+    width: 93%;
+    display: inline-block;
+    background: gray;
+    color: white;
+    text-align: center;
+    font-variant: small-caps;
+    font-weight: bold;
+}
+
+.reservation{
+    position: absolute;
+    width: 50%;
+    top: 0;
+    left: 50%;
+    transform: translatex(-50%); 
+    text-align: center;
+    transition: all 1s ;
+    opacity: 0;
+    border-radius: 5px;
+    color: lightseagreen;
+    font-weight: bold;
+    font-size: 25px;
+    border: 2px solid black;
+}
+
+.image{
+    position: relative;
+    height: 220px;
+    width: 300px;
+    margin-bottom:15px ;
+}
+.car-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    transition: 0.5s ease;
+}
+.img-border{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.image:hover .reservation{
+    opacity: 1;
+    top: 40%;
+}
+.image:hover .car-img{
+    opacity: 0.5;
+}
+
+.right{
+    width: 200px;
+    margin-left: 50px;
+}
+.right li {
+    width: 100%;
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    vertical-align: top;
+}
+.right h3{
+    font-variant: small-caps;
+    font-size: 27px;
+    font-style: italic;
+    margin-left: 0;
+    text-align: left;
+    margin-top: 10px;
+}
+.right p {
+    font-family: Arial;
+    font-variant: small-caps;
+    font-weight: bold;
+    margin-left: 5px;
+    font-size: 14px;
+}
+.ico img {
+    vertical-align: bottom;
+    width: 25px;
+} 
+.gg {
+    display: flex;
+}
+.gg p{
+    margin-left: 10px;
+    font-size: 15px;
+    font-style: italic;
+}
+.mileage{
+    color: green;
+}
+.reserve{
+    background-image: linear-gradient(rgba(1,1,5,0.8) , rgb(40,40,40)) , url(../img/happy-family1.jpg);
+    height: 550px;
+    width: 100vw ;
+    background-position: center;
+    margin-top: 0 ;
+    background-color: lightgray;
+}
+
+.cancel{
+    background-image: linear-gradient(rgba(1,1,5,0.8) , rgb(40,40,40)) , url(../img/cancelation.png);
+    height: 300px;
+    width: 100vw ;
+    background-position: center;
+    margin-top: 0 ;
+    background-color: #d3d3d3;
+}
+
+.login-form{
+    padding: 10px 10px;
+}
+
+.log{
+    width:30%;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+}
+
+.log fieldset{
+    width: 74.5%;
+    height: 96%;
+    border: 5px solid white;
+    margin: 5px auto;
+    padding: 30px 35px 0;
+}
+
+.cancel fieldset{
+    width: 74.5%;
+    height: 96%;
+    border: 5px solid white;
+    margin: 5px auto;
+    padding: 30px 35px 0;
+}
+
+.reserve fieldset {
+    width: 74.5%;
+    height: 98%;
+    border: 5px solid white;
+    margin: 5px auto;
+    padding: 30px 35px 0;
+}
+legend {
+    color: white;
+    font-variant: small-caps;
+    font-size: 3rem;
+    text-align: left;
+    padding: 20px;
+}
+.label-class{
+    color: white;
+    display: block;
+    width: 100%;
+    font-size: 20px;
+    font-variant: small-caps;
+    font-weight: bold;
+}
+input , select{
+    width: 220px;
+    height: 30px;
+    font-size: 18px;
+}
+input[type="submit"] {
+    margin-top: 13px;
+    opacity: 0.8;
+}
+.info-text{
+    margin-left: 5px;
+}
+
+.my-reservation{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.my-reservation img{
+    width: 20px;
+}
+
+table{
+    border-collapse:collapse;
+    width:100%;
+}
+
+th, td{
+    color: white;
+    padding:5px;
+    border:2px solid lightseagreen;
+}
+
+.contact{
+    background-image: linear-gradient(rgba(50, 54, 54, 0.8),rgb(1, 5, 5)),url(https://www.pdsvehicleinspections.com.au/wp-content/uploads/2015/09/contact_us_background.jpg);
+    background-size: cover;
+    overflow: hidden;
+    min-width: 100em;
+    color: white;
+    padding: 30px;
+    height: 350px;
+    text-align: justify;
+}
+.bold{
+    color: lightseagreen;
+    opacity: 0.8;
+    transition: all 0.5s ease;
+}
+.bold:hover{
+    opacity: 1;
+}
+i:hover{
+    color: lightseagreen;
+}
+
+@media only screen and (max-width:1000px) {
+    .navbar{
+        padding: 0;
+    }
+
+    h1{
+        font-size: var(--l50);
+    }
+
+    h2{
+        font-size: var(--l35);
+    }
+
+    .menu-btn{
+        display: block;
+    }
+
+    .logo{
+        position: absolute;
+        top: var(--l50);
+        left: var(--l50);
+    }
+
+    .nav-links{
+        flex-direction: column;
+        width: 100vw;
+        height: 100vh;
+        justify-content: center;
+        background-image: linear-gradient(rgba(6, 6, 6, 0.497), rgba(65, 56, 89, 0));
+        backdrop-filter: blur(10px);
+        border-bottom-right-radius: 250px;
+        margin-left: -1200px;
+        transition: all 2.5s ease;
+    }
+
+    .nav-links li{
+        margin: var(--l30) 0;
+    }
+
+    .mobile-menu{
+        margin-left: 0;
+    }
+
+    header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    header .desc{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        font-size: var(--l50);
+    }
+
+    header h1{
+        font-size: var(--l50);
+    }
+}
